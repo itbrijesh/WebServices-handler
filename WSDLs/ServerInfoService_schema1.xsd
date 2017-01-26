@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.project.com/" xmlns:tns="http://ws.project.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="getServerName" type="tns:getServerName"/>
+
+  <xs:element name="getServerNameResponse" type="tns:getServerNameResponse"/>
+
+  <xs:complexType name="getServerName">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getServerNameResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
